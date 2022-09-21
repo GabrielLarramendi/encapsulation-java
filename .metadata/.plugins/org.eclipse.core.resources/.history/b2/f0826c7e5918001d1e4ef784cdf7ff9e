@@ -1,0 +1,27 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite o preço do Dolar: ");
+		double dollarPrice = sc.nextDouble();
+		System.out.print("Quantidade de Dolares comprados: ");
+		double dollarQuantity = sc.nextDouble();
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}

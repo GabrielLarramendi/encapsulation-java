@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double t1a, t1b, t1c, t2a, t2b, t2c, area1, area2;
+		
+		System.out.println("Digite as 3 medidas do triangulo 1: ");
+		t1a = sc.nextDouble();
+		t1b = sc.nextDouble();
+		t1c = sc.nextDouble();
+		System.out.println("Digite as 3 medidas do triangulo 2: ");
+		t2a = sc.nextDouble();
+		t2b = sc.nextDouble();
+		t2c = sc.nextDouble();
+		
+		area1 = area(t1a, t1b, t1c);
+		area2 = area(t2a, t2b, t2c);
+		
+		System.out.printf("Área do Triangulo 1: %.4f %n", area1);
+		System.out.printf("Área do Triangulo 2: %.4f %n", area2);
+		
+		double maiorArea = maiorValor(area1, area2);
+		System.out.println("O a maior área é a do triangulo " + maiorArea);
+		sc.close();
+	}
+	
+	public static double area(double a, double b, double c) {
+		double p = Math.sqrt((a + b + c)/2);
+		double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+		return area;
+	}
+	
+	public static double maiorValor(double value1, double value2) {
+		double maior = 0;
+		if (value1 > value2) {
+			maior = 1;
+		} else {
+			maior = 2;
+		}
+		return maior;
+	}
+	
+}

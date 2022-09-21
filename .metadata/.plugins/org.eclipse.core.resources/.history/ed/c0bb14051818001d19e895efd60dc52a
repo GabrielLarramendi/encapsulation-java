@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double altura, largura;
+		
+		System.out.print("Digite a altura do triângulo: ");
+		altura = sc.nextDouble();
+		System.out.print("Digite a largura do triângulo: ");
+		largura = sc.nextDouble();
+		
+		double area = altura * largura;
+		double perimetro = (altura * 2) + (largura * 2);
+		double diagonal = Math.sqrt(Math.pow(altura, 2) * Math.pow(largura, 2));
+		
+		System.out.printf("AREA = %.2f %n", area);
+		System.out.printf("PERÍMETRO = %.2f %n", perimetro);
+		System.out.printf("DIAGONAL = %.2f %n", diagonal);
+		
+		sc.close();
+
+	}
+
+}

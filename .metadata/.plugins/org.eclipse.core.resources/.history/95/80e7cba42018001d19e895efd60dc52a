@@ -1,0 +1,33 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String name;
+		double grossSalary, tax, netSalary;
+		
+		
+		System.out.print("Name: ");
+		name = sc.nextLine();
+		System.out.print("Gross Salary: ");
+		grossSalary = sc.nextDouble();
+		System.out.print("Tax: ");
+		tax = sc.nextDouble();
+		
+		netSalary = grossSalary - tax;
+		
+		System.out.println("Employee " + name + ", " + netSalary);
+		
+		System.out.print("Qual porcentagem você quer aumentar ao salário? ");
+		double aumento = sc.nextDouble();
+		double newSalary = netSalary + (aumento/100) * 6000;
+		
+		System.out.println("Updated data: " + name + ", " + newSalary);
+
+		sc.close();
+	}
+}

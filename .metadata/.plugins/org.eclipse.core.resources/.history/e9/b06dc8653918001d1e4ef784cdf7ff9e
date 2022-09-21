@@ -1,0 +1,27 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String name;
+		double nota1, nota2, nota3, notaFinal, missingNota;
+		
+		name = sc.nextLine();
+		nota1 = sc.nextDouble();
+		nota2 = sc.nextDouble();
+		nota3 = sc.nextDouble();
+		
+		notaFinal = nota1 + nota2 + nota3;
+		
+		System.out.println(notaFinal);
+		
+		sc.close();
+
+	}
+
+}

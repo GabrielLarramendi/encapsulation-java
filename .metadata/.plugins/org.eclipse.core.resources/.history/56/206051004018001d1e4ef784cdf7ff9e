@@ -1,0 +1,30 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Student;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Student student = new Student();
+		
+		student.name = sc.nextLine();
+		student.nota1 = sc.nextDouble();
+		student.nota2 = sc.nextDouble();
+		student.nota3 = sc.nextDouble();
+		
+		if (student.finalNota() >= 60.00) {
+			System.out.println(student);
+		} else {
+			System.out.println(student);
+			System.out.println("AINDA FALTA(M) " + String.format("%.2f", student.missingNote()) + " PONTO(S)");
+		}
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../arrays-e-matrizes/arrays-e-matrizes.iml" filepath="$PROJECT_DIR$/../../arrays-e-matrizes/arrays-e-matrizes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../arrays-e-matrizes/boxing-unboxing/boxing-unboxing.iml" filepath="$PROJECT_DIR$/../../arrays-e-matrizes/boxing-unboxing/boxing-unboxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/construtores-01.iml" filepath="$PROJECT_DIR$/construtores-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../listas/employee-exercise/employee-exercise.iml" filepath="$PROJECT_DIR$/../../listas/employee-exercise/employee-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../encapsulamento/encapsulamento.iml" filepath="$PROJECT_DIR$/../../encapsulamento/encapsulamento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../encapsulamento/encapsulamento-exercicio-final/encapsulamento-exercicio-final.iml" filepath="$PROJECT_DIR$/../../encapsulamento/encapsulamento-exercicio-final/encapsulamento-exercicio-final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../arrays-e-matrizes/vetores/exemplos-arrays/exemplos-arrays.iml" filepath="$PROJECT_DIR$/../../arrays-e-matrizes/vetores/exemplos-arrays/exemplos-arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../arrays-e-matrizes/vetores/lista-de-exercicios/lista-de-exercicios.iml" filepath="$PROJECT_DIR$/../../arrays-e-matrizes/vetores/lista-de-exercicios/lista-de-exercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../listas/listas.iml" filepath="$PROJECT_DIR$/../../listas/listas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../arrays-e-matrizes/matrizes/matrizes.iml" filepath="$PROJECT_DIR$/../../arrays-e-matrizes/matrizes/matrizes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../listas/notes/notes.iml" filepath="$PROJECT_DIR$/../../listas/notes/notes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../arrays-e-matrizes/testes-anotacoes/testes-anotacoes.iml" filepath="$PROJECT_DIR$/../../arrays-e-matrizes/testes-anotacoes/testes-anotacoes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../arrays-e-matrizes/vetores/vetores.iml" filepath="$PROJECT_DIR$/../../arrays-e-matrizes/vetores/vetores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../arrays-e-matrizes/vetores/vetores-com-elementos-tipo-classe/vetores-com-elementos-tipo-classe.iml" filepath="$PROJECT_DIR$/../../arrays-e-matrizes/vetores/vetores-com-elementos-tipo-classe/vetores-com-elementos-tipo-classe.iml" />
+    </modules>
+  </component>
+</project>

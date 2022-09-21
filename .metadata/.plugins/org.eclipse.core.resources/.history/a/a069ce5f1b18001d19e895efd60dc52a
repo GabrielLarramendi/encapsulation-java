@@ -1,0 +1,33 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String name;
+		double grossSalary;
+		
+		
+		System.out.print("Name: ");
+		name = sc.nextLine();
+		System.out.print("Gross Salary: ");
+		grossSalary = sc.nextDouble();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}

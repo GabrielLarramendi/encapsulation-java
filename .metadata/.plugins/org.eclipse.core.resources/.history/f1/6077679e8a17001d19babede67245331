@@ -1,0 +1,48 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Product produto;
+		produto = new Product();
+		
+		System.out.print("Digite o nome do produto: ");
+		produto.name = sc.nextLine();
+		System.out.print("Digite o preço desse produto: RS ");
+		produto.price = sc.nextDouble();
+		System.out.print("Digite a quantidade desse produto no estoque: ");
+		produto.quantity = sc.nextInt();
+		
+		System.out.println("Produto: " + produto.name);
+		System.out.println("Preço do produto: " + produto.price);
+		System.out.println("Quantiade em estoque: "  + produto.quantity);
+		System.out.println();
+		System.out.println("Quantidade em estoque => " + produto.quantity);
+		System.out.println("Preço total do estoque => R$ " + produto.totalValueInStock());
+		System.out.println();
+		
+		System.out.print("Agora, digite a quantidade de itens que você deseja remover do estoque: ");
+		int remover = sc.nextInt();
+		produto.removeProduct(remover);
+		System.out.println("Quantidade em estoque => " + produto.quantity);
+		System.out.print("Preço total do estoque => R$ " + produto.totalValueInStock());
+		
+		System.out.print("Agora, digite a quantidade de itens que você deseja adicionar ao estoque: ");
+		int adicionar = sc.nextInt();
+		produto.addProduct(adicionar);
+		System.out.println("Quantidade em estoque => " + produto.quantity);
+		System.out.print("Preço total do estoque => R$ " + produto.totalValueInStock());
+		
+
+		sc.close();
+		
+
+	}
+
+}

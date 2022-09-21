@@ -1,0 +1,30 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Product produto;
+		produto = new Product();
+		
+		System.out.print("Digite o nome do produto: ");
+		produto.name = sc.nextLine();
+		System.out.print("Digite o preço desse produto: RS ");
+		produto.price = sc.nextDouble();
+		System.out.print("Digite a quantidade desse produto no estoque: ");
+		produto.quantity = sc.nextInt();
+		
+		System.out.println(produto.name);
+		System.out.println(produto.price);
+		System.out.println(produto.quantity);
+		sc.close();
+		
+
+	}
+
+}

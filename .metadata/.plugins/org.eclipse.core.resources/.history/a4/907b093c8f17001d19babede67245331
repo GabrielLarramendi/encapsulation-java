@@ -1,0 +1,45 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Product produto;
+		produto = new Product();
+		
+		/* A instanciação pode ser feita como:
+		 * Product produto = new Product(); */
+		
+		System.out.print("Digite o nome do produto: ");
+		produto.name = sc.nextLine(); //Atribuindo valor ao atributo name da classe Product
+		System.out.print("Digite o preço desse produto: RS ");
+		produto.price = sc.nextDouble(); //Atribuindo valor ao atributo price da classe Product
+		System.out.print("Digite a quantidade inicial desse produto no estoque: ");
+		produto.quantity = sc.nextInt(); //Atribuindo valor ao atributo quantity da classe Product
+		System.out.println();
+		
+		System.out.println("Dados iniciais: " + produto.name + ", " + produto.price + ", " + produto.quantity);
+		System.out.println("Preço total do estoque => R$ " + produto.totalValueInStock()); //Preço total usando a quantidade e o preço do produto informados no começo do programa.
+		System.out.println();
+		
+		System.out.print("Agora, digite a quantidade de itens que você deseja remover do estoque: ");
+		int remover = sc.nextInt(); //Guardando nessa variável o valor que quero remover
+		produto.removeProduct(remover); //Utilizando o método remover da classe Product. Fazendo o a quantidade que ja tinha - a quantidade que quero tirar.
+		// Agora, o atibuto quantity mudou de valor e possui a quantidade a menos que foi retirada.
+		System.out.println("Dados atualizados: " + produto.name + ", " + produto.price + ", " + produto.quantity);
+		System.out.println("Preço total do estoque => R$ " + produto.totalValueInStock()); //Novo valor de estoque, já que tem uma nova quantidade de produtos;
+		
+		System.out.print("Agora, digite a quantidade de itens que você deseja adicionar ao estoque: ");
+		int adicionar = sc.nextInt();
+		produto.addProduct(adicionar); //Utilizando o metodo adicionar e fazendo o valor de quantity mudar, adicionando o numero informado para aumentar o estoque.
+		System.out.println("Dados atualizados: " + produto.name + ", " + produto.price + ", " + produto.quantity);
+		System.out.print("Preço total do estoque => R$ " + produto.totalValueInStock()); //Novo valor de estoque, já que tem uma nova quantidade de produtos;
+		
+		sc.close();
+	}
+}
